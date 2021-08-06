@@ -60,33 +60,14 @@ export default {
         return task;
       })
     },
+    async fetchTasks(){
+      const res = await fetch('http://localhost:1000/tasks');
+      const data = await res.json();
+      return data;
+    }
   },
-  created(){
-    //When created runs the tasks property is updated.
-    //You would typically have an HTTP request to retrieve the data
-    //and store it here.
-    this.tasks = [
-      {
-        id:1,
-        text:'Doctors Appointment',
-        day:'March 1st at 2:30pm',
-        reminder: true
-      },
-      {
-        id:2,
-        text:'Go to Groceries',
-        day:'March 1st at 8:30am',
-        reminder: true
-      },
-      {
-        id:3,
-        text:'Feed the Dog',
-        day:'March 1st at 12:30pm',
-        reminder: false
-      }
-    ];
-
-    console.log(this.tasks);
+  async created(){
+    this.tasks = await this.fetchTasks();
   } 
 }
 </script>
