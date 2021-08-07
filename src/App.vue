@@ -14,6 +14,7 @@
       @toggle-reminder="toggleReminder" 
       :tasks="tasks" />
 
+    <router-view></router-view>
     <Footer />    
   </div>
 </template>

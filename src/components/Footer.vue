@@ -1,7 +1,7 @@
 <template>
     <footer>
         <p>Copyright Traversy Media Guide &copy; 2021</p>
-        <a href="/about">About</a>
+        <router-link to="/about">About</router-link>
     </footer>
 </template>
 
@@ -15,3 +15,4 @@
         text-align: center;
     }
 </style>
+
