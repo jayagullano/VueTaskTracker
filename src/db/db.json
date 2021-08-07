@@ -3,7 +3,7 @@
     {
       "text": "Study PHP",
       "day": "Saturday Morning",
-      "reminder": true,
+      "reminder": false,
       "id": 1
     },
     {
