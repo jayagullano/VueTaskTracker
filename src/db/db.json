@@ -1,16 +1,22 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Doctors Appointment",
-      "day": "March 1st at 2:30pm",
-      "reminder": false
+      "text": "Study PHP",
+      "day": "Saturday Morning",
+      "reminder": true,
+      "id": 1
     },
     {
-      "id": 2,
-      "text": "Go to School",
-      "day": "March 1st at 8:30am",
-      "reminder": false
+      "text": "Study Laravel",
+      "day": "Sunday Morning",
+      "reminder": true,
+      "id": 2
+    },
+    {
+      "text": "Finish Vue Study (Including Vuex)",
+      "day": "Today",
+      "reminder": true,
+      "id": 3
     }
   ]
 }
